@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>React Basics</title>
+  </head>
+  <body>
+    <div class="js-container"></div>
+    <script src="https://unpkg.com/supersimpledev/react.js"></script>
+    <script src="https://unpkg.com/supersimpledev/react-dom.js"></script>
+    <script src="https://unpkg.com/supersimpledev/babel.js"></script>
+
+    <!-- <div class="js-container1"></div>
+    <div class="js-container2"></div> -->
+
+    <!-- <script src = "https://unpkg.com/supersimpledev@8.6.4/external-library.js"></script> -->
+
+    <script type="text/babel">
+        const button = <button>click me</button>;
+        const para = <p>Hello World!</p>;
+
+        const div1 = (
+          <div>
+            <h1>Hello World</h1>
+            <button>click me</button>
+            <p>Hello World!</p>
+          </div>
+        );
+
+        const container = document.querySelector('.js-container');
+        ReactDOM.createRoot(container).render(div1);
+        // const container0 = document.querySelector('.js-container');
+        // ReactDOM.createRoot(container0).render('Hello World');
+
+        // const button = <button>click me</button>;
+        // const container1 = document.querySelector('.js-container1');
+        // ReactDOM.createRoot(container1).render(button);
+
+        // const para = <p>Hello World!</p>;
+        // const container2 = document.querySelector('.js-container2');
+        // ReactDOM.createRoot(container2).render(para)
+    </script>
+  </body>
+</html>
